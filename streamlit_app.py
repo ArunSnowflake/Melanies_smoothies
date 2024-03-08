@@ -29,6 +29,7 @@ if ing_list:
 
     for fruit_chossen in ing_list:
         ing_string += fruit_chossen + ', '
+        st.subheader(fruit_chossen + 'Nutrition Information')
         fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
         fv_df = st.dataframe(data=fruityvice_response.json(), use_container_width=True)
 
