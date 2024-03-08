@@ -30,7 +30,7 @@ if ing_list:
     ing_string = ''
 
     for fruit_chossen in ing_list:
-        ing_string += fruit_chossen + ', '
+        ing_string += fruit_chossen + ' '
 
         search_on=pd_df.loc[pd_df['FRUIT_NAME'] == fruit_chossen, 'SEARCH_ON'].iloc[0]
         st.write('The search value for ', fruit_chossen,' is ', search_on, '.')
